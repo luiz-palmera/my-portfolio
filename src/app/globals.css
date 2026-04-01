@@ -1,90 +1,78 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* =========================
-   DESIGN TOKENS (DEFAULT = DARK)
-========================= */
-
-:root {
-  /* Background */
-  --color-background-primary: #0A0B09;
+@theme {
+  --color-background-primary: #090B0A;
   --color-background-secondary: #111814;
   --color-background-muted: #E2F3EB;
   --color-background-surface: #F3F7F5;
 
-  /* Text */
   --color-text-primary: #F3F7F5;
   --color-text-secondary: #E2F3EB;
   --color-text-muted: #587B69;
   --color-text-inverse: #111814;
 
-  /* Brand */
   --color-brand-primary: #587B69;
-
-  /* Border */
-  --color-border-primary: rgba(255, 255, 255, 0.05);
-  --color-border-secondary: rgba(255, 255, 255, 0.08);
 }
 
-/* =========================
-   LIGHT MODE
-========================= */
+:root {
+  --app-background-primary: #0A0B09;
+  --app-background-secondary: #111814;
+  --app-background-muted: #E2F3EB;
+  --app-background-surface: #F3F7F5;
+
+  --app-text-primary: #F3F7F5;
+  --app-text-secondary: #E2F3EB;
+  --app-text-muted: #587B69;
+  --app-text-inverse: #111814;
+
+  --app-border-primary: rgba(255, 255, 255, 0.05);
+  --app-border-secondary: rgba(255, 255, 255, 0.08);
+}
 
 .light {
-  --color-background-primary: #F3F7F5;
-  --color-background-secondary: #E2F3EB;
-  --color-background-muted: #111814;
-  --color-background-surface: #FFFFFF;
+  --app-background-primary: #F3F7F5;
+  --app-background-secondary: #E2F3EB;
+  --app-background-muted: #111814;
+  --app-background-surface: #FFFFFF;
 
-  --color-text-primary: #111814;
-  --color-text-secondary: #587B69;
-  --color-text-muted: #587B69;
-  --color-text-inverse: #F3F7F5;
+  --app-text-primary: #111814;
+  --app-text-secondary: #587B69;
+  --app-text-muted: #587B69;
+  --app-text-inverse: #F3F7F5;
 
-  --color-border-primary: rgba(0, 0, 0, 0.08);
-  --color-border-secondary: rgba(0, 0, 0, 0.12);
+  --app-border-primary: rgba(0, 0, 0, 0.08);
+  --app-border-secondary: rgba(0, 0, 0, 0.12);
 }
-
-/* =========================
-   BASE STYLES
-========================= */
 
 html,
 body {
-  background-color: var(--color-background-primary);
-  color: var(--color-text-primary);
+  background-color: var(--app-background-primary);
+  color: var(--app-text-primary);
 }
-
-/* =========================
-   GLASS EFFECT
-========================= */
 
 .glass {
   background: rgba(17, 24, 20, 0.7);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 
-  border: 1px solid var(--color-border-primary);
+  border: 1px solid var(--app-border-primary);
 
   box-shadow:
     0 20px 40px rgba(0, 0, 0, 0.4),
     0 0 0 1px rgba(255, 255, 255, 0.02);
 }
 
-/* versão mais leve (pra card) */
 .glass-soft {
   background: rgba(17, 24, 20, 0.85);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 
-  border: 1px solid var(--color-border-primary);
+  border: 1px solid var(--app-border-primary);
 }
 
-/* =========================
-   TRANSITIONS (UX)
-========================= */
-
 * {
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
