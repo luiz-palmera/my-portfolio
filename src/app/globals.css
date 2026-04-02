@@ -48,6 +48,11 @@ html,
 body {
   background-color: var(--app-background-primary);
   color: var(--app-text-primary);
+  font-family: var(--font-space-grotesk);
+}
+
+.font-display {
+  font-family: var(--font-space-grotesk), sans-serif;
 }
 
 .glass {

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
 
@@ -10,6 +10,11 @@ export const metadata: Metadata = {
   description: "Portfolio of a Frontend engineer",
 };
 
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -17,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark" style={{ colorScheme: "dark" }}>
-      <body className={inter.className}>
+      <body className={`${inter.className} ${spaceGrotesk.className}`}>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
