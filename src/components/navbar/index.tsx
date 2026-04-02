@@ -4,7 +4,7 @@ import Theme from "./components/theme";
 
 export default function Navbar() {
   return (
-    <div className="mt-15 w-full flex items-center justify-center gap-10">
+    <div className="mt-10 w-full  flex items-center justify-center gap-85">
       <Theme />
       <Navigation />
       <Language />
