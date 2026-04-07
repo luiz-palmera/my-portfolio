@@ -1,5 +1,5 @@
 import { LucideMoon, LucideSun } from "lucide-react";
-import NavWrapper from "./navwrapper";
+import NavWrapper from "./nav-wrapper";
 
 export default function Theme() {
   return (

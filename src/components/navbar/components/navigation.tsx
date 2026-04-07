@@ -4,7 +4,7 @@ import {
   LucideHammer,
   LucideHouse,
 } from "lucide-react";
-import NavWrapper from "./navwrapper";
+import NavWrapper from "./nav-wrapper";
 
 export default function Navigation() {
   return (
