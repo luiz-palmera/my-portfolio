@@ -22,6 +22,8 @@ export default function NavWrapper({
         "rounded-2xl gap-6 flex items-center bg-background-secondary justify-center px-7 py-3 " +
         className
       }
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
     >
       {children}
     </motion.div>
