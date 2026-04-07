@@ -1,18 +1,13 @@
-import {
-  LucideBriefcase,
-  LucideFolder,
-  LucideHammer,
-  LucideHouse,
-} from "lucide-react";
 import NavWrapper from "./nav-wrapper";
+import NavItem from "./nav-item";
 
 export default function Navigation() {
   return (
     <NavWrapper>
-      <LucideHouse className="hover:scale-110 transition-all cursor-pointer h-6 w-6 text-brand-primary" />
-      <LucideFolder className="hover:scale-110 transition-all cursor-pointer h-6 w-6 text-brand-primary" />
-      <LucideBriefcase className="hover:scale-110 transition-all cursor-pointer h-6 w-6 text-brand-primary" />
-      <LucideHammer className="hover:scale-110 transition-all cursor-pointer h-6 w-6 text-brand-primary" />
+      <NavItem icon="House" />
+      <NavItem icon="Folder" />
+      <NavItem icon="Briefcase" />
+      <NavItem icon="Hammer" />
     </NavWrapper>
   );
 }
