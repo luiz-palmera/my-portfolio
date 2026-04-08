@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utlis";
 import * as lucideIcons from "lucide-react";
-import { twMerge } from "tailwind-merge";
 
 export const { icons } = lucideIcons;
 
